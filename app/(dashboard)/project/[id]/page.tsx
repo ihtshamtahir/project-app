@@ -25,7 +25,3 @@ export default async function ProjectPage({ params }) {
   );
 }
 
-export async function getInitialProps({ res }) {
-  res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate');
-  return {};
-}

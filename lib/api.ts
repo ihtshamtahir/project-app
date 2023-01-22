@@ -5,6 +5,7 @@ const fetcher = async ({ url, method, body, json = true }) => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        'Cache-Control': 's-maxage=300, stale-while-revalidate',
       },
     });
   
